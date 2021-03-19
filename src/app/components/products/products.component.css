@@ -1,0 +1,50 @@
+.mydiv {
+    margin-top: 150px;
+    margin-bottom: 50px
+}
+h6{
+    display: inline-block;
+    padding-top:6px;
+    padding-bottom:6px;
+    color:black;
+    font-size: 14px;
+}
+h6.card-text{
+    margin:auto;
+    text-decoration: underline;
+}
+h6.card-text:hover{
+    cursor: pointer; 
+}
+
+button{
+    width:256px;
+    height:40px;
+}
+
+.card{
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.card-body {
+    position: absolute;
+    padding: 5px;
+    z-index: 1;
+    top: 0;
+    background: #ffffff94;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+span.price {
+    padding: 7px;
+    background: #000;
+    color: #fff;
+    position: absolute;
+    z-index: 10;
+    bottom: 21px;
+    left: 13px;
+    font-size: 14px;
+    font-weight: 500;
+}

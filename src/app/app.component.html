@@ -1,0 +1,16 @@
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Products</a>
+  </nav>
+
+  <main role="main" class="container">
+    <app-products [products]="products" (getProduct)="getProduct($event)"></app-products>
+    <app-modal (closeEvent)="closedModal()" *ngIf="showModal">
+      <app-products-deatils [product]="product"></app-products-deatils>
+
+    </app-modal>
+    
+  </main><!-- /.container -->
+

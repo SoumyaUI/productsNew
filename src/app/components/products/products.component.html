@@ -1,0 +1,15 @@
+<div class="container mydiv">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let product of products; let index = index">
+            <!-- bbb_deals -->
+            <div class="card">
+                <img class="card-img-top" src="{{product.hero.href}}" alt="{{product.name}}">
+                <div class="card-body">
+                    <h6 class="card-text" (click)="getDetails(product)">
+                        {{product.name}}</h6>
+                </div>
+                <span class="price">$ {{product?.price?.regular || product?.priceRange?.selling?.high}}</span>
+            </div>
+        </div>
+    </div>
+</div>
